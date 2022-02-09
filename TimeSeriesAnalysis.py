@@ -8,6 +8,7 @@
 # Hadi Fanaee, Ph.D., Assistant Professor
 # hadi.fanaee@hh.se
 # www.fanaee.com
+
 ######################################################################
 
 
@@ -530,4 +531,10 @@ from pandas import read_csv
 df = read_csv('airline-passengers.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
 df.resample("D").interpolate() #Upsampling
 df.resample(“Y").mean() #Downsampling
+
+#**********************************************************************
+# References
+#**********************************************************************
+Nielsen, Aileen. Practical time series analysis: Prediction with statistics and machine learning. O'Reilly Media, 2019. [Applied Time Series Analysis with Python/R codes]
+Brownlee, Jason. Deep learning for time series forecasting: predict the future with MLPs, CNNs and LSTMs in Python. Machine Learning Mastery, 2018. [Deep Learning for Time Series Forecasting]
 
